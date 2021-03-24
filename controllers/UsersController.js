@@ -91,6 +91,7 @@ router.get('/:userId/account', async (req, res) =>{
         id = req.params.userId
         const user = await User.findById(id)
         console.log(user)
+        
         res.json(user)
 
 
